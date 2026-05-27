@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Community Event Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a> |
+    <a href="#events">Events</a> |
+    <a href="#contact">Contact</a> |
+    <a href="help.html" target="_blank">Help</a>
+  </nav>
+
+  <!-- Main -->
+  <main>
+    <section id="home">
+      <div id="welcomeBanner">
+        Welcome to the Community Event Portal!
+        <span style="color:red; font-weight:bold;"> Special Offer: Free Entry!</span>
+      </div>
+    </section>
+
+    <section id="events">
+      <h2 class="highlight">Upcoming & Past Events</h2>
+      <table>
+        <caption>Community Event Gallery</caption>
+        <tr>
+          <td><img src="event1.jpg" alt="Music Fest" title="Music Fest" class="eventImage"></td>
+          <td><img src="event2.jpg" alt="Food Fair" title="Food Fair" class="eventImage"></td>
+          <td><img src="event3.jpg" alt="Sports Day" title="Sports Day" class="eventImage"></td>
+        </tr>
+        <tr>
+          <td><img src="event4.jpg" alt="Art Show" title="Art Show" class="eventImage"></td>
+          <td><img src="event5.jpg" alt="Tech Meetup" title="Tech Meetup" class="eventImage"></td>
+          <td><img src="event6.jpg" alt="Cultural Fest" title="Cultural Fest" class="eventImage"></td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="register">
+      <h2>Event Registration</h2>
+      <form onsubmit="showConfirmation(event)">
+        <input type="text" name="name" placeholder="Enter your name" required autofocus><br>
+        <input type="email" name="email" placeholder="Enter your email" required><br>
+        <input type="date" name="date" required><br>
+        <select name="eventType" onchange="savePreference(this.value)">
+          <option value="Music">Music</option>
+          <option value="Food">Food</option>
+          <option value="Sports">Sports</option>
+        </select><br>
+        <textarea name="message" placeholder="Your message"></textarea><br>
+        <input type="tel" name="phone" placeholder="Phone number" onblur="validatePhone(this)"><br>
+        <button type="submit">Register</button>
+        <output id="confirmation"></output>
+      </form>
+    </section>
+
+    <section id="feedback">
+      <h2>Feedback</h2>
+      <textarea id="feedbackBox" onkeyup="countChars(this)"></textarea>
+      <p>Characters typed: <span id="charCount">0</span></p>
+      <img src="event1.jpg" ondblclick="enlargeImage(this)" width="100">
+    </section>
+
+    <section id="video">
+      <h2>Promo Video</h2>
+      <video src="promo.mp4" controls oncanplay="alert('Video ready to play')"></video>
+    </section>
+
+    <section id="map">
+      <h2>Find Nearby Events</h2>
+      <button onclick="findEvents()">Find Nearby Events</button>
+      <p id="location"></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Local City Council</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
