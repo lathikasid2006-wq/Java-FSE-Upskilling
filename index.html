@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Community Event Portal</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+
+  <style>
+    #welcomeBanner {
+      background-color: #1a73e8;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <nav id="mainNav">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#register">Register</a></li>
+      <li><a href="#feedback">Feedback</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="help.html" target="_blank">Help</a></li>
+    </ul>
+  </nav>
+
+  <div id="welcomeBanner">
+    Welcome back! <span style="color: red; font-weight: bold;">Special Offer: Free entry for first-time registrations!</span>
+    <p class="highlight">Don't miss out on upcoming community events this season.</p>
+  </div>
+
+  <h1 id="mainHeader" style="color: red;">Local Community Event Portal</h1>
+
+
+  <section id="home">
+    <h2>About the Portal</h2>
+
+    <div class="news-bulletin">
+      <h3>Community Bulletin</h3>
+      <p>
+        The city council has launched this portal to help residents stay connected with local events.
+        Whether you're interested in cultural festivals, sports meets, health camps, or skill workshops,
+        this is your one-stop platform. We aim to make community participation simple and accessible for everyone.
+        New events are added every week, so keep checking back for updates. Volunteers are also welcome
+        to help organize and manage upcoming events across different neighborhoods.
+      </p>
+    </div>
+  </section>
+
+  <section id="events">
+    <h2>Upcoming Events</h2>
+
+    <div class="eventCard">
+      <h3>Music Festival</h3>
+      <p>Date: July 12, 2025 | Venue: City Park</p>
+      <a href="#register">Register Now</a>
+    </div>
+
+    <div class="eventCard">
+      <h3>Health Camp</h3>
+      <p>Date: July 18, 2025 | Venue: Community Hall</p>
+      <a href="#register">Register Now</a>
+    </div>
+
+    <div class="eventCard">
+      <h3>Skill Workshop</h3>
+      <p>Date: July 25, 2025 | Venue: Learning Center</p>
+      <a href="#register">Register Now</a>
+    </div>
+
+    <h3>Events Admin Table</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Event Name</th>
+          <th>Date</th>
+          <th>Venue</th>
+          <th>Slots</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Music Festival</td>
+          <td>July 12</td>
+          <td>City Park</td>
+          <td>200</td>
+        </tr>
+        <tr>
+          <td>Health Camp</td>
+          <td>July 18</td>
+          <td>Community Hall</td>
+          <td>150</td>
+        </tr>
+        <tr>
+          <td>Skill Workshop</td>
+          <td>July 25</td>
+          <td>Learning Center</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>Sports Meet</td>
+          <td>Aug 2</td>
+          <td>Stadium</td>
+          <td>300</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="gallery">
+    <h2>Event Gallery</h2>
+    <table class="gallery-table">
+      <tr>
+        <td>
+          <img src="https://picsum.photos/seed/event1/200/150" alt="Music Festival 2024" title="Annual Music Festival" class="gallery-img">
+          <p>Music Festival</p>
+        </td>
+        <td>
+          <img src="https://picsum.photos/seed/event2/200/150" alt="Health Camp 2024" title="Free Health Camp" class="gallery-img">
+          <p>Health Camp</p>
+        </td>
+        <td>
+          <img src="https://picsum.photos/seed/event3/200/150" alt="Skill Workshop 2024" title="Skill Building Workshop" class="gallery-img" ondblclick="enlargeImage(this)">
+          <p>Skill Workshop</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="https://picsum.photos/seed/event4/200/150" alt="Sports Meet 2024" title="Annual Sports Meet" class="gallery-img">
+          <p>Sports Meet</p>
+        </td>
+        <td>
+          <img src="https://picsum.photos/seed/event5/200/150" alt="Cultural Night 2024" title="Cultural Night" class="gallery-img">
+          <p>Cultural Night</p>
+        </td>
+        <td>
+          <img src="https://picsum.photos/seed/event6/200/150" alt="Food Fair 2024" title="Community Food Fair" class="gallery-img">
+          <p>Food Fair</p>
+        </td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="register">
+    <h2>Event Registration</h2>
+    <div class="form-container">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" placeholder="Enter your name" required autofocus>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" placeholder="Enter 10-digit phone number" onblur="validatePhone(this)">
+
+      <label for="dob">Date:</label>
+      <input type="date" id="dob" required>
+
+      <label for="eventType">Event Type:</label>
+      <select id="eventType" onchange="showEventFee(this)">
+        <option value="">-- Select Event --</option>
+        <option value="music">Music Festival - Free</option>
+        <option value="health">Health Camp - Free</option>
+        <option value="workshop">Skill Workshop - Rs.200</option>
+        <option value="sports">Sports Meet - Rs.100</option>
+      </select>
+      <p id="feeDisplay"></p>
+
+      <label for="message">Message:</label>
+      <textarea id="message" placeholder="Any special requests or notes..."></textarea>
+
+      <button type="button" onclick="submitForm()" class="cta-button">Register</button>
+
+      <output id="confirmOutput"></output>
+    </div>
+  </section>
+
+  <section id="feedback">
+    <h2>Event Feedback</h2>
+    <div class="form-container">
+      <label for="feedbackText">Your Feedback:</label>
+      <textarea id="feedbackText" placeholder="Write your feedback here..." onkeyup="countChars(this)"></textarea>
+      <p id="charCount">Characters typed: 0</p>
+
+      <button type="button" onclick="submitFeedback()" class="cta-button">Submit Feedback</button>
+    </div>
+  </section>
+
+  <section id="video">
+    <h2>Event Promo Video</h2>
+    <video width="600" controls oncanplay="videoReady()">
+      <source src="promo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p id="videoMsg"></p>
+  </section>
+
+  <section id="location">
+    <h2>Find Nearby Events</h2>
+    <button class="cta-button" onclick="findLocation()">Find Nearby Events</button>
+    <p id="locationOutput"></p>
+  </section>
+
+  <section id="preferences">
+    <h2>Your Preferences</h2>
+    <p id="savedPref"></p>
+    <button class="cta-button" onclick="clearPrefs()">Clear Preferences</button>
+  </section>
+
+  
+  <footer>
+    <p>&copy; 2025 Local Community Event Portal. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
