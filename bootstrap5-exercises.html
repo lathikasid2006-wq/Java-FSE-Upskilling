@@ -9,7 +9,7 @@
   <!-- Exercise 17.1: Bootstrap Icons CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
   <style>
-    /* ── Custom theme ──────────────────────────────── */
+   
     :root {
       --bs-primary: #4f46e5;
     }
@@ -35,21 +35,20 @@
     h2.ex-title { font-size: 1rem; font-weight: 700; color: #4f46e5; margin-bottom: 14px; }
     hr.ex-sep { border-color: #e2e8f0; margin: 18px 0; }
 
-    /* Ex 6 – custom navbar */
+    
     .custom-flex-nav { background:#1e293b; padding:12px 20px; }
     .custom-flex-nav a { color:#cbd5e1; text-decoration:none; padding:4px 10px; }
     .custom-flex-nav a:hover { color:#fff; }
 
-    /* Ex 13.2 gradient */
+
     .grad-dark { background: linear-gradient(135deg,#1e293b,#4f46e5); }
 
-    /* Ex 16.2 overlay badge */
     .img-badge-wrap { position:relative; display:inline-block; }
     .img-badge-wrap .badge-overlay {
       position:absolute; top:6px; right:6px;
     }
 
-    /* Sticky TOC */
+
     #toc { position:sticky; top:16px; }
     #toc a { font-size:.82rem; color:#4f46e5; }
     #toc a:hover { text-decoration:underline; }
@@ -59,9 +58,7 @@
 </head>
 <body class="bg-light">
 
-<!-- ═══════════════════════════════════════════
-     PAGE HEADER
-══════════════════════════════════════════════ -->
+
 <div class="bg-dark text-white py-4 mb-4">
   <div class="container">
     <h1 class="fw-bold mb-1">Bootstrap 5 – All Exercises</h1>
@@ -72,7 +69,7 @@
 <div class="container">
   <div class="row">
 
-    <!-- ── SIDEBAR TOC ─────────────────────────── -->
+   
     <div class="col-lg-3 d-none d-lg-block">
       <div id="toc" class="card shadow-sm p-3">
         <div class="fw-bold mb-2 small text-uppercase text-muted">Table of Contents</div>
@@ -100,13 +97,8 @@
       </div>
     </div><!-- /toc -->
 
-    <!-- ── MAIN CONTENT ────────────────────────── -->
+   
     <div class="col-lg-9">
-
-
-      <!-- ████████████████████████████████████████
-           EXERCISE 1: Setting Up Bootstrap 5
-      █████████████████████████████████████████ -->
       <div id="ex1">
         <div class="section-header">Exercise 1 · Setting Up Bootstrap 5</div>
         <div class="exercise-box">
@@ -132,10 +124,6 @@
         </div>
       </div>
 
-
-      <!-- ████████████████████████████████████████
-           EXERCISE 2: Structure and Files
-      █████████████████████████████████████████ -->
       <div id="ex2">
         <div class="section-header">Exercise 2 · Bootstrap Structure &amp; Files</div>
         <div class="exercise-box">
@@ -164,10 +152,6 @@
         </div>
       </div>
 
-
-      <!-- ████████████████████████████████████████
-           EXERCISE 3: Responsive Grid
-      █████████████████████████████████████████ -->
       <div id="ex3">
         <div class="section-header">Exercise 3 · Fundamentals of Responsive Grid Layout</div>
         <div class="exercise-box">
@@ -203,11 +187,6 @@
           <p class="mt-2 mb-0 text-muted small">Breakpoints: <strong>xs</strong> (none) &lt;576px · <strong>sm</strong> ≥576 · <strong>md</strong> ≥768 · <strong>lg</strong> ≥992 · <strong>xl</strong> ≥1200 · <strong>xxl</strong> ≥1400</p>
         </div>
       </div>
-
-
-      <!-- ████████████████████████████████████████
-           EXERCISE 4: Column Layouts
-      █████████████████████████████████████████ -->
       <div id="ex4">
         <div class="section-header">Exercise 4 · Column Layouts &amp; Grid Classes</div>
         <div class="exercise-box">
@@ -241,11 +220,6 @@
           </div>
         </div>
       </div>
-
-
-      <!-- ████████████████████████████████████████
-           EXERCISE 5: Alignment & Reordering
-      █████████████████████████████████████████ -->
       <div id="ex5">
         <div class="section-header">Exercise 5 · Alignment &amp; Reordering in Grid</div>
         <div class="exercise-box">
@@ -274,11 +248,6 @@
           <p class="mt-2 mb-0 text-muted small">On mobile the DOM order shows A first; on md+ B appears first due to <code>order-md-1</code>.</p>
         </div>
       </div>
-
-
-      <!-- ████████████████████████████████████████
-           EXERCISE 6: Responsive Flexbox
-      █████████████████████████████████████████ -->
       <div id="ex6">
         <div class="section-header">Exercise 6 · Responsive Flexbox Utilities</div>
         <div class="exercise-box">
@@ -308,11 +277,6 @@
           </div>
         </div>
       </div>
-
-
-      <!-- ████████████████████████████████████████
-           EXERCISE 7: Typography
-      █████████████████████████████████████████ -->
       <div id="ex7">
         <div class="section-header">Exercise 7 · Typography</div>
         <div class="exercise-box">
@@ -335,11 +299,6 @@
           <p class="text-capitalize">text-capitalize: hello world</p>
         </div>
       </div>
-
-
-      <!-- ████████████████████████████████████████
-           EXERCISE 8: Forms
-      █████████████████████████████████████████ -->
       <div id="ex8">
         <div class="section-header">Exercise 8 · Forms</div>
         <div class="exercise-box">
@@ -403,10 +362,6 @@
         </div>
       </div>
 
-
-      <!-- ████████████████████████████████████████
-           EXERCISE 9: Buttons
-      █████████████████████████████████████████ -->
       <div id="ex9">
         <div class="section-header">Exercise 9 · Buttons</div>
         <div class="exercise-box">
@@ -453,11 +408,6 @@
           </div>
         </div>
       </div>
-
-
-      <!-- ████████████████████████████████████████
-           EXERCISE 10: Navbars & Navigation
-      █████████████████████████████████████████ -->
       <div id="ex10">
         <div class="section-header">Exercise 10 · Navbars &amp; Navigation</div>
         <div class="exercise-box">
@@ -506,10 +456,6 @@
         </div>
       </div>
 
-
-      <!-- ████████████████████████████████████████
-           EXERCISE 11: Cards & Media Objects
-      █████████████████████████████████████████ -->
       <div id="ex11">
         <div class="section-header">Exercise 11 · Cards &amp; Media Objects</div>
         <div class="exercise-box">
@@ -536,11 +482,6 @@
           </div>
         </div>
       </div>
-
-
-      <!-- ████████████████████████████████████████
-           EXERCISE 12: Spacing
-      █████████████████████████████████████████ -->
       <div id="ex12">
         <div class="section-header">Exercise 12 · Spacing Utilities</div>
         <div class="exercise-box">
@@ -593,10 +534,6 @@
         </div>
       </div>
 
-
-      <!-- ████████████████████████████████████████
-           EXERCISE 13: Colors & Backgrounds
-      █████████████████████████████████████████ -->
       <div id="ex13">
         <div class="section-header">Exercise 13 · Colors &amp; Backgrounds</div>
         <div class="exercise-box">
@@ -627,11 +564,6 @@
           </div>
         </div>
       </div>
-
-
-      <!-- ████████████████████████████████████████
-           EXERCISE 14: Display & Visibility
-      █████████████████████████████████████████ -->
       <div id="ex14">
         <div class="section-header">Exercise 14 · Display &amp; Visibility</div>
         <div class="exercise-box">
@@ -662,10 +594,6 @@
         </div>
       </div>
 
-
-      <!-- ████████████████████████████████████████
-           EXERCISE 15: Borders, Shadows, Rounded
-      █████████████████████████████████████████ -->
       <div id="ex15">
         <div class="section-header">Exercise 15 · Borders, Shadows &amp; Rounded Corners</div>
         <div class="exercise-box">
@@ -704,11 +632,6 @@
           </div>
         </div>
       </div>
-
-
-      <!-- ████████████████████████████████████████
-           EXERCISE 16: Positioning
-      █████████████████████████████████████████ -->
       <div id="ex16">
         <div class="section-header">Exercise 16 · Positioning Utilities</div>
         <div class="exercise-box">
@@ -732,11 +655,6 @@
 &lt;/div&gt;</pre>
         </div>
       </div>
-
-
-      <!-- ████████████████████████████████████████
-           EXERCISE 17: Bootstrap Icons
-      █████████████████████████████████████████ -->
       <div id="ex17">
         <div class="section-header">Exercise 17 · Icons with Bootstrap Icons</div>
         <div class="exercise-box">
@@ -767,11 +685,6 @@
           </div>
         </div>
       </div>
-
-
-      <!-- ████████████████████████████████████████
-           EXERCISE 18: JS Plugins
-      █████████████████████████████████████████ -->
       <div id="ex18">
         <div class="section-header">Exercise 18 · Bootstrap 5 JavaScript Plugins</div>
         <div class="exercise-box">
@@ -837,11 +750,6 @@
           </div>
         </div>
       </div>
-
-
-      <!-- ████████████████████████████████████████
-           EXERCISE 19: Sass Customisation
-      █████████████████████████████████████████ -->
       <div id="ex19">
         <div class="section-header">Exercise 19 · Customisation with Sass</div>
         <div class="exercise-box">
@@ -859,17 +767,11 @@ npx sass src/custom.scss dist/custom.css --watch</pre>
           <hr class="ex-sep"/>
 
           <h2 class="ex-title">19.2 – Customise via _variables.scss</h2>
-          <pre class="bg-dark text-info rounded p-3 small">// src/custom.scss
-
-// ── 1. Override Bootstrap variables BEFORE importing ──
-$primary:        #e63946;          // red instead of blue
-$border-radius:  1rem;             // rounder corners
+          <pre class="bg-dark text-info rounded p-3 small">
+$primary:        #e63946;          
+$border-radius:  1rem;           
 $font-family-base: 'Poppins', sans-serif;
-
-// ── 2. Import Bootstrap source Sass ──
 @import "../node_modules/bootstrap/scss/bootstrap";
-
-// ── 3. Your own styles ──
 .hero { background: $primary; color: #fff; padding: 4rem; }</pre>
 
           <div class="mt-3 alert alert-info small mb-0">
@@ -884,7 +786,7 @@ $font-family-base: 'Poppins', sans-serif;
 </div><!-- /container -->
 
 
-<!-- ────────── FIXED FOOTER (Exercise 16.1) ────────── -->
+
 <footer class="position-fixed bottom-0 start-0 end-0 bg-dark text-white text-center py-2 small">
   <i class="bi bi-bootstrap-fill text-primary me-1"></i>
   Bootstrap 5 Exercises · Exercise 16.1 – position-fixed footer
